@@ -1,0 +1,138 @@
+/* Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta a.button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta a.button:hover {
+  background-color: #e68900;
+}
+
+.hero {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons .button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-buttons .button.outline {
+  background-color: transparent;
+  border: 2px solid #ff9800;
+  color: #ff9800;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.steps, .features, .use-cases {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step, .feature, .use-case {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature, .faq-item {
+  background-color: #f7f7f7;
+}
+
+.section.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.social-links a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
