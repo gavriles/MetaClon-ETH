@@ -1,0 +1,274 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4a90e2;
+}
+
+.cta .button {
+  background: linear-gradient(45deg, #4a90e2, #b04ef0);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta .button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #357ABD, #8734F0);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.7), rgba(94, 52, 240, 0.7)), url('hero-background.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.cta-buttons .button {
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-buttons .outline {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.cta-buttons .button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Section General */
+.section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease;
+}
+
+.section.dark {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Use Cases Section */
+.use-cases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.use-case {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex-basis: 30%;
+}
+
+.use-case h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.use-case p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* FAQ Section */
+.faq-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  color: #cccccc;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #4a90e2;
+}
+
+/* Change "Get Started" button text color */
+.cta-buttons .button {
+  color: white !important; /* This ensures the button text is always white */
+}
